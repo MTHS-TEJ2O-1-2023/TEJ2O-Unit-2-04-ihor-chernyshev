@@ -9,5 +9,5 @@ basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
 input.onButtonPressed(Button.A, function () {
-  basic.showString('The temperature is:' + input.temperature().toString() + 'C')
+  basic.showString('The temperature is:' + (input.temperature()).toString() + 'C')
 })
