@@ -8,7 +8,7 @@
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
-input.onButtonPressed(Button.A, function() {
-    input.temperature()
-    basic.showString("The temperature is:" + input.temperature() + "C")
+input.onButtonPressed(Button.A, function () {
+  input.temperature()
+  basic.showString("The temperature is:" + input.temperature() + "C")
 })
