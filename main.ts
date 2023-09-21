@@ -1,8 +1,14 @@
 /* Copyright (c) 2020 MTHS All rights reserved
  *
- * Created by: Mr. Coxall
- * Created on: Sep 2020
- * This program ...
+ * Created by: Ihor Chernyshev
+ * Created on: Sep 2023
+ * This program shows a temperaure of a micro-processor
 */
 
-basic.showString('Hello, World!')
+basic.clearScreen()
+basic.showIcon(IconNames.Happy)
+
+input.onButtonPressed(Button.A, function () {
+    input.temperature()
+    basic.showString("The temperature is:" + (input.temperature()).toString() + "C")
+})
