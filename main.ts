@@ -7,9 +7,8 @@
 
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
-let temperature = input.temperature()
 
 input.onButtonPressed(Button.A, function () {
-    temperature = input.temperature()
-    basic.showString('The temperature is:' + temperature.toString() + 'C')
+    
+    basic.showString('The temperature is:' + input.temperature().toString() + 'C')
 })
