@@ -11,4 +11,4 @@ display.show(Image.HAPPY)
 
 while True:
     if button_a.was_pressed():
-        display.scroll(temperature())
+        display.scroll(temperature() + "C")
